@@ -24,6 +24,7 @@ function Products(props) {
             <p>{product.email}</p>
             <p>Msg:</p>
             <p>{product.message}</p>
+            <button>DELETE</button>
           </li>
         ))}
       </ul>
