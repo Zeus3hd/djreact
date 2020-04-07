@@ -166,7 +166,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({}));\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./products */ \"./djreact/frontend/src/reducers/products.js\");\n/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_products__WEBPACK_IMPORTED_MODULE_2__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  products: _products__WEBPACK_IMPORTED_MODULE_2___default.a\n}));\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/index.js?");
+
+/***/ }),
+
+/***/ "./djreact/frontend/src/reducers/products.js":
+/*!***************************************************!*\
+  !*** ./djreact/frontend/src/reducers/products.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/products.js?");
 
 /***/ }),
 
