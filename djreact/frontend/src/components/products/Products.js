@@ -7,9 +7,27 @@ function Products(props) {
     props.getProducts();
   }, []);
   return (
-    <div>
-      <h1>Product List</h1>
-    </div>
+    <>
+      <h2>Products</h2>
+      <ul style={{ margin: 0, padding: 0 }}>
+        {props.products.map((product) => (
+          <li
+            key={product.id}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <p>Name:</p>
+            <p>{product.name}</p>
+            <p>Email:</p>
+            <p>{product.email}</p>
+            <p>Msg:</p>
+            <p>{product.message}</p>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
