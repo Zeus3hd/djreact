@@ -6,7 +6,6 @@ db.sqlite3
 migrations/
 media/
 settings.py
-djreact/frontend/static/frontend/main.js
 # C extensions
 *.so
 
