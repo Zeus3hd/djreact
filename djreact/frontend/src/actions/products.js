@@ -5,24 +5,24 @@ import { GET_PRODUCTS, DELETE_PRODUCT } from "./types";
 export const getProducts = () => (dispatch) => {
   axios
     .get("/api/products/")
-    .then((res) => {
+    .then((res) =>
       dispatch({
         type: GET_PRODUCTS,
         payload: res.data,
-      });
-    })
+      })
+    )
     .catch((err) => console.log(err));
 };
 
 // DELETE_PRODUCT
 export const deleteProduct = (id) => (dispatch) => {
   axios
-    .get(`/api/products/${id}/`)
-    .then((res) => {
+    .delete(`/api/products/${id}/`)
+    .then((res) =>
       dispatch({
         type: DELETE_PRODUCT,
-        payload: res.id,
-      });
-    })
+        payload: id,
+      })
+    )
     .catch((err) => console.log(err));
 };
