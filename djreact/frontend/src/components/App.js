@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./layout/Header";
 
 const App = () => {
-  return <h1>hello from react</h1>;
+  return <Header />;
 };
 
 ReactDOM.render(<App />, document.getElementById("app"));
