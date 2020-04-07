@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getProducts } from "../../actions/products";
-function Products() {
+function Products(props) {
+  useEffect(() => {
+    props.getProducts();
+  }, []);
   return (
     <div>
       <h1>Product List</h1>
@@ -19,4 +22,4 @@ const mapStateToProps = (state) => ({
   // third products is the property in initiaState object in products reducer
   products: state.products.products,
 });
-export default connect(mapStateToProps)(Products);
+export default connect(mapStateToProps, { getProducts })(Products);
