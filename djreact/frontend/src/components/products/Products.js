@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { connect, useDispatch, useSelector, shallowEqual } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 // import PropTypes from "prop-types";
 import { getProducts, deleteProduct } from "../../actions/products";
 
@@ -39,18 +39,5 @@ function Products() {
     </>
   );
 }
-
-// Products.propTypes = {
-//   products: PropTypes.array.isRequired,
-// };
-// const mapStateToProps = (state) => ({
-//   // first products is by choice
-//   // second products is the products reducer incombineReducer
-//   // third products is the property in initiaState object in products reducer
-//   products: state.products.products,
-// });
-// export default connect(mapStateToProps, { getProducts, deleteProduct })(
-//   Products
-// );
 
 export default Products;

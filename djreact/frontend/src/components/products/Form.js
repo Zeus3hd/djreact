@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addProduct } from "../../actions/products";
 
 export default function Form() {
+  const dispatch = useDispatch();
+
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -8,7 +12,10 @@ export default function Form() {
   });
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log(state);
+    const { name, email, message } = state;
+    const product = { name, email, message };
+    console.log(product);
+    dispatch(addProduct(product));
   };
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
