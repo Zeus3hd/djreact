@@ -20,7 +20,7 @@ export const deleteProduct = (id) => (dispatch) => {
     .get(`/api/products/${id}/`)
     .then((res) => {
       dispatch({
-        type: DELETE_PRODUCTS,
+        type: DELETE_PRODUCT,
         payload: res.id,
       });
     })
