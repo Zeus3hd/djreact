@@ -5,8 +5,6 @@ import { logout } from "../../actions/auth";
 export default function Header() {
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-
-  console.log(auth);
   const handleLogout = () => {
     dispatch(logout());
   };
