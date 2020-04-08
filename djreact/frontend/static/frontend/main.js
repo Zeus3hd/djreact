@@ -102,11 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!***********************************************!*\
   !*** ./djreact/frontend/src/actions/types.js ***!
   \***********************************************/
-/*! exports provided: GET_PRODUCTS, DELETE_PRODUCT, ADD_PRODUCT */
+/*! exports provided: GET_PRODUCTS, DELETE_PRODUCT, ADD_PRODUCT, USER_LOADING, USER_LOADED, AUTH_ERROR */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GET_PRODUCTS\", function() { return GET_PRODUCTS; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DELETE_PRODUCT\", function() { return DELETE_PRODUCT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ADD_PRODUCT\", function() { return ADD_PRODUCT; });\nvar GET_PRODUCTS = \"GET_PRODUCTS\";\nvar DELETE_PRODUCT = \"DELETE_PRODUCT\";\nvar ADD_PRODUCT = \"ADD_PRODUCT\";\n\n//# sourceURL=webpack:///./djreact/frontend/src/actions/types.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GET_PRODUCTS\", function() { return GET_PRODUCTS; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DELETE_PRODUCT\", function() { return DELETE_PRODUCT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ADD_PRODUCT\", function() { return ADD_PRODUCT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"USER_LOADING\", function() { return USER_LOADING; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"USER_LOADED\", function() { return USER_LOADED; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AUTH_ERROR\", function() { return AUTH_ERROR; });\nvar GET_PRODUCTS = \"GET_PRODUCTS\";\nvar DELETE_PRODUCT = \"DELETE_PRODUCT\";\nvar ADD_PRODUCT = \"ADD_PRODUCT\";\nvar USER_LOADING = \"USER_LOADING\";\nvar USER_LOADED = \"USER_LOADED\";\nvar AUTH_ERROR = \"AUTH_ERROR\";\n\n//# sourceURL=webpack:///./djreact/frontend/src/actions/types.js?");
 
 /***/ }),
 
