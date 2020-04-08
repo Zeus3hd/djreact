@@ -206,6 +206,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 
 /***/ }),
 
+/***/ "./djreact/frontend/src/reducers/auth.js":
+/*!***********************************************!*\
+  !*** ./djreact/frontend/src/reducers/auth.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar initialState = {\n  token: localStorage.getItem(\"token\"),\n  isAuthenticated: null,\n  isLoading: false,\n  user: null\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n  var action = arguments.length > 1 ? arguments[1] : undefined;\n\n  switch (action.type) {\n    default:\n      return state;\n  }\n});\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/auth.js?");
+
+/***/ }),
+
 /***/ "./djreact/frontend/src/reducers/index.js":
 /*!************************************************!*\
   !*** ./djreact/frontend/src/reducers/index.js ***!
@@ -214,7 +226,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./products */ \"./djreact/frontend/src/reducers/products.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  products: _products__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n}));\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./products */ \"./djreact/frontend/src/reducers/products.js\");\n/* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth */ \"./djreact/frontend/src/reducers/auth.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  products: _products__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  auth: _auth__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n}));\n\n//# sourceURL=webpack:///./djreact/frontend/src/reducers/index.js?");
 
 /***/ }),
 
