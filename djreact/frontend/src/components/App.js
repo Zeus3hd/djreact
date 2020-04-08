@@ -7,6 +7,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import Header from "./layout/Header";
+import Register from "./accounts/Register";
+import Login from "./accounts/Login";
 import Dashboard from "./products/Dashboard";
 import { Provider } from "react-redux";
 import store from "../store";
@@ -18,6 +20,8 @@ const App = () => {
           <Header />
           <Switch>
             <Route exact path="/" component={Dashboard} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/login" component={Login} />
           </Switch>
         </>
       </Router>
