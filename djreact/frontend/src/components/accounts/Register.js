@@ -1,6 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../../actions/auth";
+
 export default function Register() {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const dispatch = useDispatch();
+
   const [state, setState] = useState({
     username: "",
     email: "",
@@ -8,11 +14,19 @@ export default function Register() {
     rePassword: "",
   });
   const handleOnSubmit = (e) => {
-    e.prevebtDefault();
+    e.preventDefault();
+    const { username, email, password } = state;
+    if (state.password !== state.rePassword) {
+      alert("no match password");
+    } else {
+      const newUser = { email, username, password };
+      dispatch(registerUser(newUser));
+    }
   };
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
+  if (isAuthenticated) return <Redirect to="/" />;
   return (
     <div>
       <form onSubmit={(e) => handleOnSubmit(e)}>
