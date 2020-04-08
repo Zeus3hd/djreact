@@ -1,17 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
+import { logout } from "../../actions/auth";
 export default function Header() {
   const auth = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+
   console.log(auth);
+  const handleLogout = () => {
+    dispatch(logout());
+  };
   const authLinks = (
     <ul>
       <li>
         <Link to="/">home</Link>
       </li>
       <li>
-        <button>Logout</button>
+        <button onClick={handleLogout}>Logout</button>
       </li>
     </ul>
   );
